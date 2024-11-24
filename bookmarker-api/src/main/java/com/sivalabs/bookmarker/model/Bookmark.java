@@ -5,8 +5,10 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.http.ResponseEntity;
 
 import java.time.Instant;
+import java.util.Optional;
 
 @Entity
 @Data
@@ -24,5 +26,4 @@ public class Bookmark {
     private String  url ;
 
     private Instant createAt ;
-
 }
